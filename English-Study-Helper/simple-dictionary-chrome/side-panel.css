@@ -1,0 +1,106 @@
+body {
+    background-color: beige;
+    max-width: 300px;  /* Expanded width */
+    min-width: 280px;  /* Ensure it doesn’t shrink smaller */
+    max-height: 600px; /* Expanded height */
+    min-height: 400px; /* Prevent height shrinkage */
+    margin: 0;
+    padding: 20px;
+}
+
+p {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    color: black;
+    margin: 0;
+}
+
+.search-toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input[type="search"] {
+    width: 280px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.word-pronounce-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    height: 80px;
+}
+
+.voice-button {
+    margin: 5px;
+    background-color: #a3bdff;
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: large;
+}
+
+.voice-button:hover {
+    background-color: #658ae6;
+    border: solid black 1px;
+}
+
+.word-pronounce-text {
+    margin: 10px;
+}
+
+#word {
+    font-size: 30px;
+}
+
+#pronounce {
+    font-size: 20px;
+}
+
+
+.word-group-content {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.word-tag {
+    margin: 0 5px 0 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.word-tag-text {
+    font-size: 14px;
+    color: black;
+    font-weight: lighter;
+}
+
+.definition-list-content {
+    margin: 10px;
+}
+
+.definition-content {
+    padding: 5px;
+    margin: 5px 0 5px 0;
+}
+
+.definition-source-header {
+    color: #a3bdff;
+    font-size: larger;
+}
+
+.definition-sentence {
+    font-size: small;
+    text-indent: 35px;
+    text-align: left;
+    margin: 5px 0 5px 0;
+}
