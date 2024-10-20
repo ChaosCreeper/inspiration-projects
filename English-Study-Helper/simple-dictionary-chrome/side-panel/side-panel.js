@@ -1,6 +1,6 @@
 "use strict"
-import {extract_all_text, is_empty_string, read_local_text} from "./scripts/base.utils.mjs";
-import {$free_dictionary_api, $simple_wiktionary} from "./scripts/api.mjs";
+import {extract_all_text, is_empty_string, read_local_text} from "../scripts/base.utils.mjs";
+import {$free_dictionary_api, $simple_wiktionary} from "../scripts/api.mjs";
 
 const LOADING = "[...loading]";
 const NOT_FOUND = "[Not Found]";
@@ -179,7 +179,6 @@ chrome.storage.session.onChanged.addListener((changes) => {
     if (!lastWordChange) {
         return;
     }
-    switch_search_box_state();
     searchBoxElem.value = lastWordChange.newValue;
     search_word(lastWordChange.newValue);
 });

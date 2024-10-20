@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Text Formatter",
+  "version": "1.0",
+  "description": "A formatter tool to replace the long blank and line break to single blank",
+  "icons": {
+    "16": "images/dictionary-icon-16.png",
+    "32": "images/dictionary-icon-32.png",
+    "48": "images/dictionary-icon-48.png",
+    "128": "images/dictionary-icon-128.png"
+  },
+  "permissions": [
+    "clipboardRead",
+    "contextMenus",
+    "clipboardWrite"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content_script.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}

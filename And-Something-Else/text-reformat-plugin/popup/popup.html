@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formatter</title>
+    <link rel="stylesheet" href="./popup.css" />
+
+</head>
+<body>
+<div id="content">
+    <div id="input-box">
+        <label id="input-label" for="input-typing">
+        <textarea id="input-typing" rows="5" cols="50" placeholder="Paste Text Here"></textarea>
+        </label>
+    </div>
+    <div class="button-box">
+        <button id="format-click" class="format-button">Format</button>
+        <button id="copy-click" class="copy-button">Copy</button>
+    </div>
+    <div id="output-box">
+        <label id="output-label" for="input-typing">
+            <textarea id="output-typing" rows="5" cols="50" placeholder="Copy Text Here" disabled></textarea>
+        </label>
+    </div>
+</div>
+<script src="./popup.js" type="module"></script>
+</body>
+</html>
