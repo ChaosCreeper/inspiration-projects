@@ -29,7 +29,7 @@
     }
   },
   "side_panel": {
-    "default_path": "side-panel.html"
+    "default_path": "side-panel/side-panel.html"
   },
   "content_scripts": [
     {
